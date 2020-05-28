@@ -45,6 +45,7 @@ ValidaCpf.prototype.Valida = function(){
     } 
 }
 
-const validaCpf = new ValidaCpf('455.523.846-01');
-console.log(validaCpf.Valida());
+const validaCpf = new ValidaCpf('Digite o cpf aqui');
+const isValid =  validaCpf.Valida();
+console.log(isValid);
 
