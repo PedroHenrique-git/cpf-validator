@@ -26,9 +26,11 @@ ValidaCpf.prototype.FormataCpf  = function(cpf){
 ValidaCpf.prototype.AdicionaDigitosNoArrayCpf = function(){
     const arrayCpf = this.TransformaEmArray();
     const digito1 = this.CriaDigito(arrayCpf);
+    console.log(digito1);
     arrayCpf.push(digito1);
     const digito2 = this.CriaDigito(arrayCpf);
     arrayCpf.push(digito2);
+    console.log(digito2);
 
     return arrayCpf; 
 }
@@ -37,15 +39,34 @@ ValidaCpf.prototype.RetornaCpfFormatado = function(){
     return cpfOriginal;
 }
 ValidaCpf.prototype.Valida = function(){
-    const cpf = this.RetornaCpfFormatado(); 
-    if(cpf === this.cpf){
-        return `O cpf ${cpf} é válido`;
+
+    const cpfSemCaracteres = this.TiraCaracteresEspeciais();
+    const cpfFormatado = this.RetornaCpfFormatado();
+
+    if(
+        cpfSemCaracteres.length !== 11 || 
+        cpfFormatado !== this.cpf || 
+        cpfSemCaracteres === "00000000000" || 
+        cpfSemCaracteres === "11111111111" || 
+        cpfSemCaracteres === "22222222222" || 
+        cpfSemCaracteres === "33333333333" || 
+        cpfSemCaracteres === "44444444444" || 
+        cpfSemCaracteres === "55555555555" || 
+        cpfSemCaracteres === "66666666666" || 
+        cpfSemCaracteres === "77777777777" || 
+        cpfSemCaracteres === "88888888888" || 
+        cpfSemCaracteres === "99999999999"){
+
+        return `Este ${this.cpf} não é válido`;
+
     }else{
-        return `O cpf ${cpf} não válido`; 
-    } 
+
+        return `Este ${this.cpf} é válido`;
+
+    }
 }
 
-const validaCpf = new ValidaCpf('Digite o cpf aqui');
+const validaCpf = new ValidaCpf('Digite seu cpf aqui');
 const isValid =  validaCpf.Valida();
 console.log(isValid);
 
