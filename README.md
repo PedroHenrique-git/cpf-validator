@@ -9,6 +9,6 @@
 </h1>
 
 <p align="left">
-  Clonar projeto: git clone https://github.com/PedroHenrique-git/ClasseValidadoraDeCpf-Php.git
+  Clonar projeto: git clone https://github.com/PedroHenrique-git/ValidadorDeCpf.git
 </p>
 
