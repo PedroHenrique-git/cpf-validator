@@ -4,9 +4,9 @@
   Classe desenvolvida como exercício durante meus estudos sobre JavaScript, mas que server como forma para validar cpfs em formulários diversos
 </p>
 
-<h1 align="left">
+<p align="left">
     <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript">🔗 JavaScript</a>
-</h1>
+</p>
 
 <p align="left">
   Clonar projeto: git clone https://github.com/PedroHenrique-git/ValidadorDeCpf.git
