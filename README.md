@@ -8,7 +8,7 @@
 
 <b>Example:</b>
 
-const validaCpf = new ValidaCpf('Digite seu cpf aqui');<br>
+const validaCpf = new ValidaCpf('Enter your cpf here');<br>
 const isValid =  validaCpf.Valida();<br>
 console.log(isValid);
 
