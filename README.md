@@ -1,14 +1,23 @@
-<h1 align="center">Classe para validar cpf(versão em JavaScript)</h1>
+<h1>Class to validate cpf (JavaScript version)</h1>
 
 <p align="left">
-  Classe desenvolvida como exercício durante meus estudos sobre JavaScript, mas que server como forma para validar cpfs em formulários diversos
+  Class developed as an exercise during my JavaScript studies, but which serves as a way to validate cpfs in different forms
 </p>
+
+## Getting Started
+
+<b>Example:</b>
+
+const validaCpf = new ValidaCpf('Digite seu cpf aqui');
+const isValid =  validaCpf.Valida();
+console.log(isValid);
+
+## Built With
 
 <p align="left">
     <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript">🔗 JavaScript</a>
 </p>
 
-<p align="left">
-  Clonar projeto: git clone https://github.com/PedroHenrique-git/ValidadorDeCpf.git
-</p>
+## License
 
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
