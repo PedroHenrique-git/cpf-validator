@@ -1,7 +1,7 @@
-<h1>Class to validate cpf (JavaScript version)</h1>
+<h1>library to validate cpf</h1>
 
 <p align="left">
-  Class developed as an exercise during my JavaScript studies, but which serves as a way to validate cpfs in different forms
+  A library to validate cpf
 </p>
 
 ## Getting Started
