@@ -13,19 +13,20 @@ const treatCpf = (cpf: string): TreatCpfProtocol => {
 };
 
 const knownInvalidsCpfs = (cpf: string): boolean => {
-    const invalidsCpfs = [
-        "00000000000", 
-        "11111111111", 
-        "22222222222", 
-        "33333333333", 
-        "44444444444", 
-        "55555555555", 
-        "66666666666", 
-        "77777777777", 
-        "88888888888", 
-        "99999999999",
-    ];
-    return invalidsCpfs.includes(cpf);
+    if(
+        cpf == "00000000000" || 
+        cpf == "11111111111" || 
+        cpf == "22222222222" || 
+        cpf == "33333333333" || 
+        cpf == "44444444444" || 
+        cpf == "55555555555" || 
+        cpf == "66666666666" || 
+        cpf == "77777777777" || 
+        cpf == "88888888888" || 
+        cpf == "99999999999"
+    ) return true;
+
+    return false;
 };
 
 const sum = (cpf: string[], acc: number): number => {
