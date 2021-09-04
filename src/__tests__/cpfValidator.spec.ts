@@ -1,4 +1,4 @@
-import cpfIsValid from "..";
+import { cpfIsValid } from "..";
 
 console.assert(cpfIsValid('397.997.340-96') === true);
 console.assert(cpfIsValid('534.891.510-62') === true);

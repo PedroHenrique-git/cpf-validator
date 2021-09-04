@@ -66,4 +66,4 @@ const cpfIsValid = (cpf: string): boolean => {
     return `${digit1}${digit2}` === finalTwoDigits ? true : false; 
 };
 
-export default cpfIsValid;
+export { cpfIsValid };
