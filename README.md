@@ -8,14 +8,20 @@
 
 <b>Example:</b>
 
-const validaCpf = new ValidaCpf('Enter your cpf here');<br>
-const isValid =  validaCpf.Valida();<br>
-console.log(isValid);
+~~~javascript
+import cpfIsValid from "..";
+
+cpfIsValid('534.891.510-62');
+
+or 
+
+cpfIsValid('03141326002');
+~~~
 
 ## Built With
 
 <p align="left">
-    <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript">🔗 JavaScript</a>
+    <a href="https://www.typescriptlang.org/">🔗 Typescript</a>
 </p>
 
 ## License
