@@ -1,5 +1,5 @@
 {
-  "name": "cpf-validator",
+  "name": "cpf-is-valid",
   "version": "1.0.0",
   "description": "library to validate cpf",
   "types": "dist/index.d.js",
