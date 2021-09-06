@@ -4,12 +4,17 @@
   A library to validate cpf
 </p>
 
+## install
+
+~~~javascript
+  npm i cpf-is-valid
+~~~
 ## Getting Started
 
 <b>Example:</b>
 
 ~~~javascript
-import cpfIsValid from "..";
+import { cpfIsValid } from "cpf-is-valid";
 
 cpfIsValid('534.891.510-62');
 
